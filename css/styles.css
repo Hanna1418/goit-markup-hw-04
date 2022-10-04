@@ -61,7 +61,6 @@ ul {
 .notnavheader {
   display: flex;
   margin-left: auto;
-  align-items: baseline;
 }
 
 .navheaderli {
@@ -86,7 +85,6 @@ body {
 
 .hero-img {
   max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -98,6 +96,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #c4c4c4;
 }
 
 .hero-title {
@@ -181,6 +180,8 @@ body {
 .hero-button:focus {
   background-color: var(--btn-color-dark);
   color: var(--advantage-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .title-center {
@@ -275,16 +276,7 @@ body {
 }
 
 .heder-list-app-icons {
-  fill: var(--text-color-light);
-}
-
-.heder-list-app {
-  margin-left: 30px;
-}
-
-.heder-list-app-icons:hover,
-.heder-list-app-icons:hover {
-  fill: var(--btn-color);
+  fill: currentColor;
 }
 
 .header-tel {
@@ -298,17 +290,13 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
-  margin-left: 10px;
 }
-
 .retreat {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  gap: 30px;
 }
 
-.retreat-one {
-  padding-top: 34px;
-  padding-bottom: 34px;
+.heder-tel-con {
+  gap: 10px;
 }
 
 .link {
@@ -358,13 +346,8 @@ body {
 .buttons:focus {
   background-color: var(--btn-color);
   color: var(--advantage-color);
-}
-
-.buttons-portfolio:hover,
-.buttons-portfolio:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 .menu-services {
@@ -429,7 +412,8 @@ body {
   display: inline-block;
 }
 
-.portfolio-hover:hover {
+.portfolio-hover:hover,
+.portfolio-hover:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
